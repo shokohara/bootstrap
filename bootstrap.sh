@@ -15,3 +15,5 @@ sudo apt-get install -y linux-image-extra-$(uname -r) docker-engine
 sudo service docker start
 sudo docker run hello-world
 sudo usermod -aG docker sho
+
+sudo apt-get install -y tmux
