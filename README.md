@@ -2,5 +2,5 @@
 ```
 sudo apt-get install -y git tmux
 tmux
-ssh-keygen -t ecdsa -b 521
+ssh-keygen -t ed25519
 ```
