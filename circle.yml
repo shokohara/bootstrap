@@ -1,0 +1,6 @@
+machine:
+  services:
+    - docker
+test:
+  override:
+    - for i in $(ls -A1 docker); do docker build -f docker/$i .; done
