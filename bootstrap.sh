@@ -3,4 +3,5 @@
 ./zsh.sh
 ./vim.sh
 ./docker.sh
+./vagrant.sh
 ./dotfiles.sh
