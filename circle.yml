@@ -3,4 +3,4 @@ machine:
     - docker
 test:
   override:
-    - for i in $(ls -A1 docker); do docker build -f docker/$i .; done
+    - docker build -f docker/ubuntu1510 .
