@@ -28,3 +28,6 @@ sudo apt-get install -y postgresql-client
 curl -O https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 sudo pip install awscli
+
+sudo apt-get install -y python-dev
+sudo pip install ansible
