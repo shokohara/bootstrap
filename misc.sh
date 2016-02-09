@@ -24,3 +24,6 @@ sudo apt-get install -y autoconf bison build-essential libssl-dev libyaml-dev li
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 sudo apt-get install -y postgresql-client
+
+curl -O https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
