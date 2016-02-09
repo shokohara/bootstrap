@@ -12,3 +12,8 @@ sudo apt-get install -y openjdk-8-jdk
 wget https://releases.hashicorp.com/packer/0.8.6/packer_0.8.6_linux_amd64.zip
 sudo apt-get install -y unzip
 unzip packer_0.8.6_linux_amd64.zip -d ~/bin
+
+sudo bash -c 'echo "deb http://repo.pritunl.com/stable/apt wily main" >> /etc/apt/sources.list.d/pritunl.list'
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv CF8E292A
+sudo apt-get update
+sudo apt-get install -y pritunl-client
