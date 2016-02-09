@@ -31,3 +31,6 @@ sudo pip install awscli
 
 sudo apt-get install -y python-dev
 sudo pip install ansible
+
+curl -L git.io/nodebrew | perl - setup
+$HOME/.nodebrew/current/bin/nodebrew install-binary 4.2.6
