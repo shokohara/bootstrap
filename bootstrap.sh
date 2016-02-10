@@ -6,3 +6,4 @@
 ./vagrant.sh
 ./dotfiles.sh
 ./qemu.sh
+./misc.sh
