@@ -5,3 +5,4 @@
 ./docker.sh
 ./vagrant.sh
 ./dotfiles.sh
+./qemu.sh
