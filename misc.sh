@@ -36,3 +36,5 @@ curl -L git.io/nodebrew | perl - setup
 $HOME/.nodebrew/current/bin/nodebrew install-binary 4.2.6
 
 sudo apt-get install -y inotify-tools
+
+sudo apt-get install -y mdadm
