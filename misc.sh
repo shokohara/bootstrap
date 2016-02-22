@@ -38,3 +38,4 @@ $HOME/.nodebrew/current/bin/nodebrew install-binary 4.2.6
 sudo apt-get install -y inotify-tools
 
 sudo apt-get install -y mdadm
+sudo apt-get install -y xsel
