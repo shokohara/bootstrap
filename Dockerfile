@@ -1,4 +1,4 @@
-FROM ubuntu:15.10
+FROM ubuntu:14.04.2
 
 RUN apt-get install -y sudo
 RUN useradd -m user && echo "user:password" | chpasswd && adduser user sudo

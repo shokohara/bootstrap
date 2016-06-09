@@ -42,3 +42,7 @@ sudo apt-get install -y xsel
 pip install --user powerline-status
 pip install --user git+git://github.com/powerline/powerline
 
+brew install peco
+sudo apt-get install -y libncurses5-dev
+brew install fzf
+sudo apt-get install -y autossh
