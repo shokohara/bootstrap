@@ -12,4 +12,7 @@ YOUR_USER_NAME ALL=(ALL) NOPASSWD: ALL
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+
+wget https://raw.githubusercontent.com/rupa/z/master/z.sh -O ~/z.sh
+echo '. $HOME/z.sh' >> ~/.zshrc
 ```
