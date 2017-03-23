@@ -1,0 +1,5 @@
+sudo: true
+osx_image: xcode8
+script:
+  - travis_wait ./anyenv.sh
+

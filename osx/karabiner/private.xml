@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Delete to Backquote(`)</name>
+    <appendix>(Fn+Delete to Backquote(`)</appendix>
+    <identifier>remap.delete2backquote_fnDelete2backquote</identifier>
+    <device_only>
+      DeviceVendor::APPLE_INC, DeviceProduct::ANY
+    </device_only>
+    <autogen>__KeyToKey__ KeyCode::DELETE, ModifierFlag::FN, KeyCode::BACKQUOTE</autogen>
+  </item>
+</root>
