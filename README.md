@@ -1,3 +1,6 @@
+[![CircleCI](https://circleci.com/gh/shokohara/bootstrap.svg?style=svg)](https://circleci.com/gh/shokohara/bootstrap)
+[![Build Status](https://travis-ci.org/shokohara/bootstrap.svg?branch=master)](https://travis-ci.org/shokohara/bootstrap)
+
 # bootstrap-ubuntu
 ```
 set -eux
