@@ -3,5 +3,5 @@ machine:
     - docker
 test:
   override:
-    - docker build -t testimage -f ubuntu/docker/ubuntu1510 .
+    - docker build -t testimage -f ubuntu/Dockerfile .
     - docker run -v $PWD:/host testimage sh -c '/host/ubuntu/bootstrap.sh'
