@@ -1,9 +1,7 @@
 machine:
   services:
     - docker
-dependencies:
-  pre:
-    - docker build -t bootstrap-ubuntu -f docker/ubuntu1510 .
 test:
   override:
-    - docker run -v $PWD:/bootstrap-ubuntu bootstrap-ubuntu bash -c 'cd bootstrap-ubuntu && bash -eux bootstrap.sh'
+    - docker build -t testimage -f ubuntu/docker/ubuntu1510 .
+    - docker run -v $PWD:/host testimage sh -c '/host/ubuntu/bootstrap.sh'
