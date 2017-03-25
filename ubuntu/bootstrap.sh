@@ -6,7 +6,7 @@ sudo apt-get install -y git curl
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 yes | ~/.fzf/install
 
-git clone https://github.com/shokohara/bootstrap-ubuntu.git $HOME/dotfiles
+git clone https://github.com/shokohara/dotfiles.git $HOME/dotfiles
 $HOME/dotfiles/deploy.sh
 
 # pyenv Requirements
