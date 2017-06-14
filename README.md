@@ -30,7 +30,7 @@ gcloud source repos clone bootstrap --project=shokohara-157622
 
 5.
 ```
-sudo apt-get install -y openjdk-8-jdk
+sudo apt-get install -y openjdk-8-jdk scala
 bootstrap/ubuntu/bootstrap.sh
 ```
 
