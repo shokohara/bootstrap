@@ -2,22 +2,36 @@
 [![Build Status](https://travis-ci.org/shokohara/bootstrap.svg?branch=master)](https://travis-ci.org/shokohara/bootstrap)
 
 # bootstrap-ubuntu
-```
-set -eux
-sudo apt-get update
-sudo apt-get install -y vim git tmux
-ssh-keygen -t ed25519
-ssh-keygen -t rsa -b 4098
-mkdir -p $HOME/src && cd $_ && git clone git@github.com:shokohara/bootstrap-ubuntu.git && cd bootstrap-ubuntu && ./bootstrap.sh
 
+1.
+```
 sudo visudo
 YOUR_USER_NAME ALL=(ALL) NOPASSWD: ALL
+```
 
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+2.
+https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu?hl=ja
+```
+export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
+echo "deb https://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+sudo apt-get update && sudo apt-get install -y google-cloud-sdk
+```
 
-wget https://raw.githubusercontent.com/rupa/z/master/z.sh -O ~/z.sh
-echo '. $HOME/z.sh' >> ~/.zshrc
+3.
+```
+gcloud init
+```
+
+4.
+```
+gcloud source repos clone bootstrap --project=shokohara-157622
+```
+
+5.
+```
+sudo apt-get install -y openjdk-8-jdk
+bootstrap/ubuntu/bootstrap.sh
 ```
 
 # bootstrap-osx
