@@ -52,6 +52,7 @@ bootstrap/ubuntu/bootstrap.sh
 ```
 git clone https://github.com/riywo/anyenv ~/.anyenv
 latestVersion=`pyenv install --list | grep -e ' [0-9]' | grep -v 'dev' | tail -n1 | tr -d ' '` ; pyenv install $latestVersion; pyenv global $_
+latestVersion=`ndenv install --list | grep -e ' v[0-9]' | grep -v 'dev' | tail -n1 | tr -d ' '` ; ndenv install $latestVersion; ndenv global $_ 
 
 sudo sh -c 'echo $(which zsh) >> /etc/shells'
 chsh -s $(which zsh)
