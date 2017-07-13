@@ -115,3 +115,11 @@ latestVersion=`ndenv install --list | grep -e ' v[0-9]' | grep -v 'dev' | tail -
 ./vim.sh
 ```
 
+## Install zsh_history
+```
+cd $HOME
+gcloud source repos clone zsh_history --project=shokohara-157622
+```
+
+## Setup iTerm2
+
