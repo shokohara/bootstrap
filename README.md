@@ -36,31 +36,74 @@ bootstrap/ubuntu/bootstrap.sh
 
 # bootstrap-osx
 
+## Open Keyboard Preference
+## Disable audio input
+## Change spotlight shortcut
+## Disable smart dbquote
+## Change Keyboard Capslock
+## Change track pad
 ## Change font
 - Preference > Language > English
 
-## Install xcode
-- App Store > XCode
-- `xcode-select --install`
+## Restart
+
+## Open this document
+- http://bootstrap.mydomain.com
 
 ## Install brew
-- `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+## Install Chrome
+```
+brew cask install google-chrome
+```
+
+## Install iTerm2
+```
+brew cask install iterm2
+```
 
 ## Upload ssh key to GitHub
+```
+ssh-keygen -t ed25519 -f $HOME/.ssh/id_ed25519 -q -N ""
+```
+
+https://github.com/settings/keys
+
+## Install dotfiles
+git clone git@github.com:shokohara/dotfiles.git ~/dotfiles
+~/dotfiles/deploy.sh
 
 ## Set up gcloud
+- https://cloud.google.com/sdk/docs/quickstart-mac-os-x
 
 ## Set up credential
+cd $HOME; gcloud source repos clone credential --project=shokohara-157622
+
 ### Depends on gcloud
 
 ## Install applications $HOME/.Brewfile
 ### Depends on credential
+```
+source $HOME/credential/env
+~/dotfiles/update-bundler.sh
+```
 
 ## Haskell
 ## Ruby
 ## Node
 ## Java
 ## Scala
+
+## Install zsh
+
+## Install vim plugins
+```
+sudo sh -c 'echo $(which zsh) >> /etc/shells'
+chsh -s $(which zsh)
+```
 
 ```
 git clone https://github.com/riywo/anyenv ~/.anyenv
@@ -70,3 +113,4 @@ latestVersion=`ndenv install --list | grep -e ' v[0-9]' | grep -v 'dev' | tail -
 sudo sh -c 'echo $(which zsh) >> /etc/shells'
 chsh -s $(which zsh)
 ```
+
