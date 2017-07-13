@@ -111,4 +111,7 @@ latestVersion=`ndenv install --list | grep -e ' v[0-9]' | grep -v 'dev' | tail -
 ```
 
 ## Install vim plugins
+```
+./vim.sh
+```
 
