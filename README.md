@@ -123,3 +123,8 @@ gcloud source repos clone zsh_history --project=shokohara-157622
 
 ## Setup iTerm2
 
+## copy ssh key
+```
+ssh-copy-id -i ~/.ssh/id_ed25519.pub sho@hostname.local
+```
+
