@@ -65,6 +65,12 @@ brew cask install google-chrome
 brew cask install iterm2
 ```
 
+## Install fzf
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
+
 ## Upload ssh key to GitHub
 ```
 ssh-keygen -t ed25519 -f $HOME/.ssh/id_ed25519 -q -N ""
