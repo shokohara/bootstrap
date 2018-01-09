@@ -3,6 +3,7 @@
 
 # bootstrap-ubuntu
 
+https://qiita.com/koara-local/items/35b999631b6ab41fdc9f
 1.
 ```
 sudo visudo
